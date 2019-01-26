@@ -6,9 +6,9 @@ const Navbar = (props) => {
   //   props.history.push('/about')
   // }, 2000);
   return (
-    <nav className="nav-wrapper red darken-3">
+    <nav className="nav-wrapper black darken-3">
       <div className="container">
-        <a className="brand-logo">Poke Times</a>
+        <a className="brand-logo">Freshly Pressed</a>
         <ul className="right">
           {/* instead of href we use Link to so react isn't reloading index, about, etc */}
           <li><Link to ="/">Home</Link></li>
