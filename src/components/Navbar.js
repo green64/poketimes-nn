@@ -8,7 +8,7 @@ const Navbar = (props) => {
   return (
     <nav className="nav-wrapper black darken-3">
       <div className="container">
-        <a className="brand-logo">Freshly Pressed</a>
+        <a className="brand-logo">Fresh Perspective</a>
         <ul className="right">
           {/* instead of href we use Link to so react isn't reloading index, about, etc */}
           <li><Link to ="/">Home</Link></li>
