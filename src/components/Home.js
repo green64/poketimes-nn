@@ -28,7 +28,13 @@ class Home extends Component {
         )
       })
     ) : (
-      <div className="center dark brown-text">No posts yet</div>
+      <div>
+      <div className="center dark brown-text">No posts yet</div><br />
+      <div>
+      BTW, because I'm using the nondestructive filter method with the Redux reducer, I'm not permanently deleting my array. So if you 
+      were to click the browser refresh upon seeing this message, all the sample posts would come back. Voila! 
+      </div>
+      </div>
     )
     return(
       <div className="container home">
