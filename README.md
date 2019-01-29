@@ -7,7 +7,21 @@
 
 I'm exploring ways to automate my blog, and I've come across several React methods. But it's been six months since I tackled anything new in React, and I needed a refresher. I also wanted to learn Redux. I really like The Net Ninja on YouTube, so I decided to give his [Complete React Tutorial & Redux](https://www.youtube.com/watch?v=OxIDLw0M-m0) a whirl. 
 
-This app isn't much to look at, and it doesn't "do" much. But that doesn't matter, because it's intended to be a prototype to demonstrate a Redux data store, actions, and reducer. It's also an important Phase I step toward automating my blog with React. 
+This app isn't intended to display elaborate content. It's a prototype to demonstrate a Redux data store, actions, and reducer. Below is the code snippet that shows the filter method used in the reducer to create a "copy" of the array every time a post is deleted. Using this nondestructive method means the original content is all still there when the page is refreshed:
+
+```const rootReducer = (state = initState, action) => {
+if (action.type === 'DELETE_POST') {
+//filter method doesn't alter original array; creates new one
+let newPosts = state.posts.filter(post => {
+return action.id !== post.id
+});
+return {
+...state,
+posts: newPosts
+}
+}
+return state;
+};```
 
 ## Technologies Used
 
