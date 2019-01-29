@@ -21,7 +21,8 @@ posts: newPosts
 }
 }
 return state;
-};```
+};
+```
 
 ## Technologies Used
 
